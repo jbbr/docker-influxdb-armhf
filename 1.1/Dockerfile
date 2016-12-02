@@ -1,12 +1,12 @@
 #FROM tutum/curl:trusty
-FROM armv7/armhf-ubuntu
+FROM armv7/armhf-ubuntu:xenial
 MAINTAINER Janek Thomaschewski <janek_docker@jbbr.net>
 
 # Install curl
 RUN apt-get update && apt-get -y install curl && rm -rf /var/lib/apt/lists/*
 
 # Install InfluxDB
-ENV INFLUXDB_VERSION 1.0.2
+ENV INFLUXDB_VERSION 1.1.0
 
 RUN curl -s -o /tmp/influxdb_armhf.tar.gz https://dl.influxdata.com/influxdb/releases/influxdb-${INFLUXDB_VERSION}_linux_armhf.tar.gz && \
   cd /tmp && \

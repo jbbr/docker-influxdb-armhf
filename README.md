@@ -1,5 +1,7 @@
-tutum-docker-influxdb
+docker-influxdb-armhf
 =====================
+
+Modified [tutum/influxdb](https://github.com/tutumcloud/influxdb) images for armhf (Raspberry pi 2 & 3)
 
 [![Deploy to Tutum](https://s.tutum.co/deploy-to-tutum.svg)](https://dashboard.tutum.co/stack/deploy/)
 
